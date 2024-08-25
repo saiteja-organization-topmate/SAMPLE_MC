@@ -1,0 +1,122 @@
+/* General Styles */
+.container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Form Elements */
+input, select, button {
+  padding: 0.5em;
+  font-size: 1rem;
+  margin: 0.2rem;
+}
+
+input[type="text"] {
+  min-width: 25ch;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Toast Container Styles */
+.toast-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.tc-left-top {
+  top: 1rem;
+  left: 1rem;
+}
+
+.tc-left-bottom {
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.tc-right-top {
+  top: 1rem;
+  right: 1rem;
+}
+
+.tc-right-bottom {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+/* Toast Styles */
+.toast {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  background-color: pink;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.5s;
+}
+
+.toast.success {
+  background-color: #00b300;
+}
+
+.toast.error {
+  background-color: #ff0000;
+}
+
+.toast.warning {
+  background-color: #ffa500;
+}
+
+.toast.info {
+  background-color: lightblue;
+}
+
+/* Remove Button */
+.remove {
+  all: unset;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .toast-container {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+}

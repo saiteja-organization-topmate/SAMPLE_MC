@@ -1,0 +1,64 @@
+/* General Container Styling */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+/* Heading Styling */
+h1.text-primary {
+  color: #007bff;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Posts List Styling */
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-group-item {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Loading Text Styling */
+.loading-text {
+  text-align: center;
+  font-size: 1.5em;
+  color: #007bff;
+}

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  font-size: 90px;
+  user-select: none;
+  cursor: pointer;
+  position: relative; /* Added for positioning the rating message */
+}
+
+.star-rating .star {
+  color: grey;
+  margin: 0 10px;
+}
+
+.star-rating .star.full {
+  color: gold;
+}
+
+.rating-message {
+  font-weight: bold;
+  font-size: 44px;
+  position: absolute; /* Position the message absolutely */
+  bottom: -60px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center the message */
+  white-space: nowrap; /* Prevents text from wrapping */
+  transition: opacity 0.3s; /* Smooth transition for the text appearance */
+}
+
+.star-rating:hover .rating-message {
+  opacity: 1; /* Show text on hover */
+}

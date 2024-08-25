@@ -1,0 +1,1 @@
+<img src="./star_rating.gif">
